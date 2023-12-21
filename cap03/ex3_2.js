@@ -5,4 +5,4 @@ const entrada = preco/2
 const parcelas = entrada/12
 console.log(`Valor ${veiculo}`)
 console.log(`Entrada de ${entrada}`)
-console.log(`12x de ${parcelas}`)
+console.log(`12x de R$ ${parcelas.toFixed(2)}`)      
