@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <img src="./img/ex4_3.jpg" alt="">
+    <h1>Entrega</h1>
+    <script>
+        function calcularTaxa(){
+        var bairro = prompt("Região: Centro, Sul, Leste, Oeste, norte ou digite o nome: ").toLocaleLowerCase()
+        var taxaEntrega
+
+        switch(bairro) {
+            case "centro":
+                taxaEntrega = 10
+                break
+            case "sul":
+                taxaEntrega = 15
+                break
+            case "leste":
+                taxaEntrega = 20
+                break
+            case "oeste":
+                taxaEntrega = 20
+                break
+            case "norte":
+                taxaEntrega = 30
+                break
+            case "":
+                taxaEntrega = 0
+                break
+            default:
+                taxaEntrega = 40
+        }
+        alert(`Taxa R$: ${taxaEntrega.toFixed(2)}`)
+    }
+        window.onload = calcularTaxa
+    </script>
+</body>
+</html>
